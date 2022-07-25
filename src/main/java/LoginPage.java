@@ -1,4 +1,3 @@
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -19,8 +18,8 @@ public class LoginPage {
     @FindBy(xpath = "//*[@id='app']/header/a/img")
     private WebElement loginButton;
 
-    void enterLogin(){loginField.sendKeys("abc@xyz.com");}
-    void enterPassword(){passwordField.sendKeys("abcdef12345");}
+    void enterLogin(String s){loginField.sendKeys();}
+    void enterPassword(String abcdef12345){passwordField.sendKeys();}
     void submitBtn(){loginButton.click();}
 
 }

@@ -12,8 +12,8 @@ public class LoginTest extends OpenPage {
     @Test
     void testLogin() {
         LoginPage loginPage = new LoginPage();
-        loginPage.enterLogin();
-        loginPage.enterPassword();
+        loginPage.enterLogin("abc@xyz.com");
+        loginPage.enterPassword("abcdef12345");
         loginPage.submitBtn();
     }
 }
